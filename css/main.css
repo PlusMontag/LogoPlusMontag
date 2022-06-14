@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Open Sans', sans-serif; */
     /* font-family: 'Ubuntu', sans-serif; */
@@ -39,9 +38,9 @@ p {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .dream {
-    margin-top: 130px;
     width: 615px;
 }
 .travel {
@@ -53,11 +52,13 @@ p {
     line-height: 49px;
 
 }
-.title span{
+.title_big{
+    color: #fff;
     font-size: 59px;
     line-height: 73px;
 }
 .intro {
+    width: 400px;
     margin-top: 30px;
     color: #fff;
     font-size: 16px;
@@ -81,29 +82,30 @@ p {
 .btn:hover {
 	background: #d9860e;
 }
+.info{
+    padding: 105px 0 120px;
+
+}
 .question {
-    padding-top: 105px;
     text-align: center;
     margin-bottom: 70px;
-    
 }
 .desires {
 	display: flex;
 	justify-content: space-between;
-    margin-bottom: 120px;
     text-align: center;
 }
 .block_time {
     background: url(../img/icon1.png) no-repeat center top;
-    width: 300px;
+    width: 289px;
 }
 .block_travel {
     background: url(../img/icon2.png) no-repeat center top;
-    width: 300px;
+    width: 289px;
 }
 .block_values {
     background: url(../img/icon3.png) no-repeat center top;
-    width: 330px;
+    width: 289px;
 }
 .block_title {
     margin-top: 100px;
@@ -117,13 +119,13 @@ p {
 }
 .ticket {
     background: #ecf3f8;
+    padding: 105px 0 105px;
 }
 .ticket_title {
-    padding-top: 105px;
     text-align: center;
 }
 .form {
-    padding:60px 0 105px;
+    padding-top: 60px;
 }
 .input {
     color: #aeacb2;
@@ -151,4 +153,67 @@ p {
 	color: #fff;
 	font-size: 14px;
 	text-align: center;
+}
+
+@media screen and (max-width:1200px){
+    .container{
+        width: 960px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .container{
+        width: 720px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .dream{
+        width: 100%;
+    }
+    .travel{
+       margin: 50px auto 0; 
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 540px;
+    }
+    .travel{
+       width: 100%;
+    }
+    .desires{
+        flex-direction: column;
+        align-items: center;
+    }
+    .question {
+        margin: 0;
+    }
+    .block{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .container{
+        width: 90%;
+    }
+    .dream, .title, .intro, .input, .btn, .block {
+        width: 100%;
+    }
+    .title {
+        text-align: center;
+        font-size: 30px;
+    }
+    .title_big{
+        text-align: center;
+        font-size: 50px;
+    }
+    .intro {
+        text-align: justify;
+    }
+    .title br{
+        display: none;
+    }
 }
